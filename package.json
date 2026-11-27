@@ -1,5 +1,6 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
@@ -7,10 +8,12 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
-    "turbo": "^2.6.1"
+    "@repo/rslint-config": "workspace:*",
+    "@rslint/core": "0.7.3",
+    "jiti": "2.7.0",
+    "prettier": "3.9.6",
+    "turbo": "^2.11.13"
   },
-  "packageManager": "pnpm@8.15.6",
-  "name": "with-vite-react"
+  "packageManager": "pnpm@11.21.0",
+  "name": "with-rsbuild"
 }
